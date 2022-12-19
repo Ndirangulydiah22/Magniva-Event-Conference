@@ -6,7 +6,7 @@
     <div class="container">
       <div class="section-header">
         <h2>Speaker Details</h2>
-        <p>Praesentium ut qui possimus sapiente nulla.</p>
+        <p>Here are some of our speakers</p>
       </div>
 
       <div class="row">

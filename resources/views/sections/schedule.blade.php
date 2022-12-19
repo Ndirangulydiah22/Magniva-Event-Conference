@@ -13,8 +13,7 @@
       @endforeach
     </ul>
 
-    <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
-      necessitatibus voluptatem quis labore perspiciatis quia.</h3>
+    <h3 class="sub-heading">Magniva International has the ability to deliver services in different regions by partnering with other top event companies in different countries.</h3>
 
     <div class="tab-content row justify-content-center">
       @foreach($schedules as $key => $day)

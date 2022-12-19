@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
 <div class="login-box">
     <div class="login-logo">
         <div class="login-logo">
@@ -70,4 +71,6 @@
         <!-- /.login-card-body -->
     </div>
 </div>
+
+
 @endsection

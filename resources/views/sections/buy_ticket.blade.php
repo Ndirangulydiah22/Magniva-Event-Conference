@@ -3,7 +3,7 @@
 
     <div class="section-header">
       <h2>Buy Tickets</h2>
-      <p>Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
+      <p>For any queries or inquiries please call or email us on +254 789 074 076 /+254 725 831 226 or events@magnivainternational.co.ke</p>
     </div>
 
     <div class="row">
@@ -22,9 +22,11 @@
                 @endforeach
               </ul>
               <hr>
+
               <div class="text-center">
                 <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="{{ Str::slug($price->name) }}">Buy Now</button>
               </div>
+              
             </div>
           </div>
         </div>
@@ -41,6 +43,8 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
+
+
         <div class="modal-body">
           <form method="POST" action="#">
             <div class="form-group">
@@ -61,9 +65,13 @@
               <button type="submit" class="btn">Buy Now</button>
             </div>
           </form>
+
+          
         </div>
       </div><!-- /.modal-content -->
+
+      
     </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+  </div>  <!-- /.modal -->
 
 </section>

@@ -192,6 +192,48 @@
                         </a>
                     </li>
                 @endcan
+
+
+                @can('attendance_access')
+                    <li class="nav-item">
+                        <a href="{{ route("admin.attendance.index") }}" class="nav-link {{ request()->is('admin/attendance') || request()->is('admin/attendance/*') ? 'active' : '' }}"> 
+                            <i class="right fas fa-clipboard-check">
+
+                            </i>
+                            <p>
+                                <span>{{ trans('cruds.attendance.title') }}</span>
+                            </p>
+                        </a>
+                    </li>
+                @endcan
+
+
+                @can('event_access')
+                    <li class="nav-item">
+                        <a href="{{ route("admin.events.index") }}" class="nav-link {{ request()->is('admin/events') || request()->is('admin/events/*') ? 'active' : '' }}"> 
+                            <i class="right fas fa-bullhorn">
+
+                            </i>
+                            <p>
+                                <span>{{ trans('cruds.events.title') }}</span>
+                            </p>
+                        </a>
+                    </li>
+                @endcan
+
+                @can('register_access')
+                    <li class="nav-item">
+                        <a href="{{ route("admin.register.index") }}" class="nav-link {{ request()->is('admin/register') || request()->is('admin/register/*') ? 'active' : '' }}"> 
+                            <i class="right fas fa-clipboard-check">
+
+                            </i>
+                            <p>
+                                <span>{{ trans('cruds.registrations.title') }}</span>
+                            </p>
+                        </a>
+                    </li>
+                @endcan
+
                 <li class="nav-item">
                     <a href="#" class="nav-link" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">
                         <p>
